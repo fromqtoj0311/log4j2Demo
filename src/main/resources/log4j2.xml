@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="OFF">
+    <Appenders>
+        <Console name="console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%highlight{%d{yyyy.MM.dd 'at' HH:mm:ss z} %-5level %class{36} %M() @%L - %msg%n}"/>
+        </Console>
+        <RollingFile name="app" fileName="log/log4j2-app.log"
+                     filePattern="logs/info/$${date:yyyy-MM}/app-%d{MM-dd-yyyy}-%i.log.gz">
+            <PatternLayout pattern="%d{yyyy.MM.dd 'at' HH:mm:ss z} %-5level %class{36} %M() @%L - %msg%n"/>
+            <SizeBasedTriggeringPolicy size="100MB"/>
+        </RollingFile>
+
+        <RollingFile name="error" fileName="log/log4j2-error.log"
+                     filePattern="logs/error/$${date:yyyy-MM}/error-%d{MM-dd-yyyy}-%i.log.gz">
+            <ThresholdFilter level="error" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="%d{yyyy.MM.dd 'at' HH:mm:ss z} %-5level %class{36} %M() @%L - %msg%n"/>
+            <SizeBasedTriggeringPolicy size="100MB"/>
+        </RollingFile>
+
+        <RollingFile name="type-sql" fileName="log/log4j2-sql.log"
+                     filePattern="logs/sql/$${date:yyyy-MM}/app-%d{MM-dd-yyyy}-%i.log.gz">
+            <ThresholdFilter level="debug" onMatch="ACCEPT" />
+            <PatternLayout pattern="%d{yyyy.MM.dd 'at' HH:mm:ss z} %-5level %class{36} %M() @%L - %msg%n"/>
+            <SizeBasedTriggeringPolicy size="100MB"/>
+        </RollingFile>
+
+        <RollingFile name="type-http" fileName="log/log4j2-http.log"
+                     filePattern="logs/sql/$${date:yyyy-MM}/app-%d{MM-dd-yyyy}-%i.log.gz">
+            <ThresholdFilter level="info" onMatch="ACCEPT" />
+            <PatternLayout pattern="%d{yyyy.MM.dd 'at' HH:mm:ss z} %-5level %class{36} %M() @%L - %msg%n"/>
+            <SizeBasedTriggeringPolicy size="100MB"/>
+        </RollingFile>
+
+        <RollingFile name="type-jsf" fileName="log/log4j2-jsf.log"
+                     filePattern="logs/sql/$${date:yyyy-MM}/app-%d{MM-dd-yyyy}-%i.log.gz">
+            <ThresholdFilter level="info" onMatch="ACCEPT" />
+            <PatternLayout pattern="%d{yyyy.MM.dd 'at' HH:mm:ss z} %-5level %class{36} %M() @%L - %msg%n"/>
+            <SizeBasedTriggeringPolicy size="100MB"/>
+        </RollingFile>
+
+    </Appenders>
+    <Loggers>
+        <Root level="INFO">
+            <appender-ref ref="app"/>
+            <appender-ref ref="error"/>
+            <appender-ref ref="console"/>
+        </Root>
+
+        <logger name="com.fromqtoj.filter.RequestLogFilter" level="info" additivity="true">
+            <appender-ref ref="type-http" />
+        </logger>
+        <logger name="com.jd.jsf" level="info" additivity="false">
+            <appender-ref ref="type-jsf" />
+        </logger>
+        <logger name="mybatis" level="debug" additivity="true">
+            <appender-ref ref="type-sql" />
+        </logger>
+    </Loggers>
+</Configuration>

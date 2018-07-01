@@ -1,0 +1,24 @@
+2018.05.26 at 23:12:06 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger debug() @159 - ==>  Preparing: INSERT INTO employee(lastName,email,gender,d_id) VALUES (?,?,?,?) 
+2018.05.26 at 23:12:06 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger debug() @159 - ==> Parameters: log4j22222(String), 123@163.com(String), 1(Integer), null
+2018.05.26 at 23:12:06 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger debug() @159 - <==    Updates: 1
+2018.05.30 at 10:15:00 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger debug() @159 - ==>  Preparing: INSERT INTO employee(lastName,email,gender,d_id) VALUES (?,?,?,?) 
+2018.05.30 at 10:15:00 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger debug() @159 - ==> Parameters: log4j22222(String), 123@163.com(String), 1(Integer), null
+2018.05.30 at 10:15:01 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger debug() @159 - <==    Updates: 1
+2018.05.30 at 10:25:00 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger debug() @159 - ==>  Preparing: INSERT INTO employee(lastName,email,gender,d_id) VALUES (?,?,?,?) 
+2018.05.30 at 10:25:00 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger debug() @159 - ==> Parameters: log4j22222(String), 123@163.com(String), 1(Integer), null
+2018.05.30 at 10:25:00 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger debug() @159 - <==    Updates: 1
+2018.05.30 at 10:26:38 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger debug() @159 - ==>  Preparing: INSERT INTO employee(lastName,email,gender,d_id) VALUES (?,?,?,?) 
+2018.05.30 at 10:26:38 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger debug() @159 - ==> Parameters: log4j22222(String), 123@163.com(String), 1(Integer), null
+2018.05.30 at 10:26:39 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger debug() @159 - <==    Updates: 1
+2018.05.30 at 10:29:11 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger debug() @159 - ==>  Preparing: INSERT INTO employee(lastName,email,gender,d_id) VALUES (?,?,?,?) 
+2018.05.30 at 10:29:12 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger debug() @159 - ==> Parameters: log4j22222(String), 123@163.com(String), 1(Integer), null
+2018.05.30 at 10:29:12 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger debug() @159 - <==    Updates: 1
+2018.05.30 at 10:32:01 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger debug() @159 - ==>  Preparing: INSERT INTO employee(lastName,email,gender,d_id) VALUES (?,?,?,?) 
+2018.05.30 at 10:32:01 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger debug() @159 - ==> Parameters: log4j22222(String), 123@163.com(String), 1(Integer), null
+2018.05.30 at 10:32:01 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger debug() @159 - <==    Updates: 1
+2018.05.30 at 10:33:13 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger debug() @159 - ==>  Preparing: INSERT INTO employee(lastName,email,gender,d_id) VALUES (?,?,?,?) 
+2018.05.30 at 10:33:13 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger debug() @159 - ==> Parameters: log4j22222(String), 123@163.com(String), 1(Integer), null
+2018.05.30 at 10:33:14 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger debug() @159 - <==    Updates: 1
+2018.05.30 at 10:33:14 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger debug() @159 - ==>  Preparing: INSERT INTO employee(lastName,email,gender,d_id) VALUES (?,?,?,?) 
+2018.05.30 at 10:33:14 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger debug() @159 - ==> Parameters: log4j22222(String), 123@163.com(String), 1(Integer), null
+2018.05.30 at 10:33:14 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger debug() @159 - <==    Updates: 1
